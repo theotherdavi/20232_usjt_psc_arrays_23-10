@@ -9,8 +9,11 @@ public class TesteVetorDinamico {
             int dado = gerador.nextInt(6) + 1;
             v.add(dado);
             v.show();
+            v.increaseCap();
 
-            Thread.sleep(5000);
+            Thread.sleep(2000);
+            System.out.println(
+                    "\n***************************************************************************************************************************");
         }
     }
 }
