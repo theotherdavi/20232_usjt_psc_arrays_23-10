@@ -13,6 +13,19 @@ public class VetorDinamico {
         elementos[qtde++] = e;
     }
 
+    public void decrease() {
+        // decrease the size of the array using isEmpty method
+        if (isEmpty()) {
+            var aux = new int[cap / 2];
+            for (int i = 0; i < cap / 2; i++) {
+                aux[i] = elementos[i];
+            }
+            cap /= 2;
+            elementos = aux;
+        } else
+            ;
+    }
+
     public void show() {
         System.out.printf("Qtde:%d\nCap: %d\n", qtde, cap);
 
